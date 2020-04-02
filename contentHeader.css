@@ -1,0 +1,60 @@
+.content{
+    grid-column: 2/10;
+    grid-row: 1/10;
+    display: grid;
+    height: min-content;
+    margin-top: 3.2vw;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows:repeat(20,1fr);
+}
+.content .contentHeader{
+    grid-column: 1/10;
+    grid-row: 1/2;
+    display: flex;
+}
+.serviceHeader{
+    flex:6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1em;
+}
+.serviceHeader #heart,.serviceHeader #refer,.serviceHeader #searchLogo,.serviceHeader #shoppingCart{
+    flex:0.5;
+    text-align: center;
+    height: 3vw;
+}
+.serviceHeader #heart{
+   background:center /60% no-repeat url('img/content/heart-outline.png'),
+           right top /20% no-repeat url("img/header/3.png");
+}
+.serviceHeader #shoppingCart{
+    background:center /60% no-repeat url('img/content/shopping-cart.png'),
+            right top/20% no-repeat url("img/header/2.png");
+}
+.serviceHeader #refer{
+    background: center/60% no-repeat url('img/content/refer.png');
+}
+.serviceHeader #searchLogo{
+    background: center/60% no-repeat url('img/content/search.png');
+}
+
+.serviceHeader #heart img,.serviceHeader #refer img,.serviceHeader #searchLogo img,.serviceHeader #shoppingCart img{
+    height:8px;
+    visibility: hidden;
+}
+.contentHeader #contentLogo{
+    flex:3.5;
+}
+.contentHeader #contentLogo img{
+    margin:0.5em auto;
+    height:70%;
+    width:90%;
+}
+.serviceHeader #search{
+    flex:4;
+    height:15px;
+    padding:1px 1px;
+    font-size: 1vw;
+    border:none;
+}

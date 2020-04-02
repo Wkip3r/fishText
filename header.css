@@ -1,0 +1,51 @@
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    background-color: white;
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+.header{
+    grid-column: 1/11;
+    grid-row: 1/1;
+    background-color: black;
+    color:white;
+    display: flex;
+    font-size: 1vw;
+    height:min-content;
+}
+#delivery img,#return img,#wholesale img,#payment img{
+    margin-left: 0.5vw;
+    height:0.7vw;
+}
+.header #delivery{
+    flex:1.7;
+    margin:1em auto;
+    text-align: right;
+}
+.header #payment,#wholesale{
+    flex:1;
+    margin:1em auto;
+    text-align: center;
+}
+.header #return{
+    flex:0.8;
+    margin:1em auto;
+    text-align: left;
+}
+
+.header #regionSale{
+    flex:4;
+    margin:1em auto;
+    left:1em;
+    text-align: right;
+}
+.header #number{
+    margin:1em auto;
+    border-left:1em solid black;
+    flex:2;
+    color:#009ee2;
+    text-align: left;
+}

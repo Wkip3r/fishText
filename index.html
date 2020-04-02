@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="header.css" rel="stylesheet"/>
+    <link href="contentHeader.css" rel="stylesheet"/>
+    <link href="content.css" rel="stylesheet"/>
+    <link href="footer.css" rel="stylesheet"/>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+    function show(){
+        $(".dropList").show();
+    }
+</script>
+<div class="header">
+    <span id="delivery">Доставка<img src="img/content/Фигура%2059%20%2319.png"/></span>
+    <span id="payment">Оплата<img src="img/content/Фигура%2059%20%2319.png"/></span>
+    <span id="return">Возврат<img src="img/content/Фигура%2059%20%2319.png"/></span>
+    <span id="wholesale"><nobr>Оптовым покупателям</nobr></span>
+    <span id="regionSale">бесплатно по России</span>
+    <span id="number">8-800-000-00-00</span>
+</div>
+<div class="middle"></div>
+<div class="content">
+    <div class="contentHeader">
+        <span id="contentLogo"><img src="img/content/LOGOtype.png"/></span>
+        <span class="serviceHeader">
+            <input id="search" placeholder="Что вы ищете?">
+            <span id="searchLogo"><img src="img/content/search.png"/></span>
+            <span id="refer"><img src="img/content/refer.png"/></span>
+            <span id="heart"><img src="img/content/heart-outline.png"/></span>
+            <span id="shoppingCart"><img src="img/content/shopping-cart.png"/></span>
+        </span>
+    </div>
+    <div class="mainContent">
+        <div class="sidebar">
+            <span id="catalogue" onclick="showDropList()"><nobr><img id="menu" src="img/content/menu.png"/>Каталог товаров<img id="arrow" src="img/content/arrow-point-to-right%20%2325.png"/></nobr></span>
+            <span id="aboutCompany" tabindex="0">О Компании</span>
+            <span id="stocks" tabindex="0">Акции</span>
+            <span id="news" tabindex="0">Новости</span>
+            <span id="blog" tabindex="0">Блог</span>
+            <span id="experts" tabindex="0">Эксперты</span>
+            <span id="contacts" tabindex="0">Контакты</span>
+        </div>
+        <div class="bannersContent">
+            <div class="mainBanner">
+                <span id="text">
+                    <span id="bannerTitle">Специальные предложения</span>
+                    <span id="productName">катушка Adrenalin 7300BC</span>
+                    <span id="price">5600 р.</span>
+                    <button id="buyButton">Купить</button>
+                     <nobr>
+                        <img src="img/content/banners/mainBanner/Фигура%2059%20%231.png"/>
+                        <img src="img/content/banners/mainBanner/Фигура%2059%20%231.png"/>
+                        <img src="img/content/banners/mainBanner/Фигура%2059%20%231.png"/>
+                     </nobr>
+                 </span>
+                 <span id="image">
+                    <img src="img/content/banners/mainBanner/image.png"/>
+                 </span>
+            </div>
+            <div class="firstBanner">
+                <span id="text">
+                    <span id="bannerTitle">Новые приманки</span>
+                    <span id="productName">для подводной ловли</span>
+                    <img src="img/content/banners/banners1/Фигура%2060%20%2310.png"/>
+                </span>
+                <span id="image">
+                    <img src="img/content/banners/banners1/rawbite.png"/>
+                </span>
+
+            </div>
+            <div class="secondBanner">
+                <span id="text">
+                    <span id="bannerTitle">Скачайте каталог</span>
+                    <span id="productName">для оптовиков</span>
+                    <img src="img/content/banners/banners1/Фигура%2060%20%2310.png"/>
+                </span>
+                <span id="image">
+                    <img src="img/content/banners/banners2/Слой%2023%20%231.png"/>
+                </span>
+
+            </div>
+            <div class="thirdBanner">
+                <span id="text">
+                    <span id="bannerTitle">Эксперты отвечают</span>
+                    <span id="productName">на ваши вопросы</span>
+                    <img src="img/content/banners/banners1/Фигура%2060%20%2310.png"/>
+                </span>
+                <span id="image">
+                    <img src="img/content/banners/banners3/Слой%2020.png"/>
+                </span>
+            </div>
+            <div class="dropList" onload="show()" tabindex="0">
+                <ul>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Катушки<img src="img/content/rightArrow.png"/>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Удилища<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Приманки<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Воблеры<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Лески и шнуры<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Поплавки<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Крючки<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Аксессуары<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Одежда<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Снаряжение<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Электроника<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Зимняя рыбалка<img src="img/content/rightArrow.png"/></li>
+                    <li><img src="img/content/banners/banners3/bluePoint.png"/>Другое<img src="img/content/rightArrow.png"/></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="bestsellers">
+            <span id="bestsellerHeader">
+                <span id="title">Хиты продаж</span>
+                <span id="link">Весь каталог</span>
+                <span id="point">
+                    <img src="img/content/Фигура 60.png"/>
+                    <img src="img/content/Фигура 60.png"/>
+                </span>
+            </span>
+            <div class="bestsellerItems">
+                <div id="item1">
+                    <span id="bestsellerTitle">Бестселлер</span>
+                    <span id="text">катушка<br>Adrenalin<br>7300 BC</span>
+                    <span id="price">4800 р.</span>
+                </div>
+                <div id="item2">
+                    <span id="label">
+                        <span id="discount">Скидка</span>
+                        <span id="hits">Хит</span>
+                    </span>
+                    <span id="icons">
+                        <span id="stars">
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                        </span>
+                        <span id="heart">
+                            <img src="img/content/bestseller/1/valentines-heart.png"/>
+                        </span>
+                    </span>
+                    <span id="productName">
+                        Удилище<br>
+                        Matze Koch Rollen
+                    </span>
+                    <span id="price">13490 р.</span>
+                    <button>В корзину</button>
+
+                </div>
+                <div id="item3">
+                    <span id="label">
+                        <span id="discount">Скидка</span>
+                        <span id="hits">Хит</span>
+                    </span>
+                    <span id="icons">
+                        <span id="stars">
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                        </span>
+                        <span id="heart">
+                            <img src="img/content/bestseller/1/valentines-heart.png"/>
+                        </span>
+                    </span>
+                    <span id="productName">
+                        Удилище<br>
+                        Matze Koch Rollen
+                    </span>
+                    <span id="price">13490 р.</span>
+                    <button>В корзину</button>
+                </div>
+                <div id="item4">
+                    <span id="label">
+                        <span id="discount">Скидка</span>
+                        <span id="hits">Хит</span>
+                    </span>
+                    <span id="icons">
+                        <span id="stars">
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                            <img src="img/content/bestseller/1/star.png"/>
+                        </span>
+                        <span id="heart">
+                            <img src="img/content/bestseller/1/valentines-heart.png"/>
+                        </span>
+                    </span>
+                    <span id="productName">
+                        Удилище<br>
+                        Matze Koch Rollen
+                    </span>
+                    <span id="price">13490 р.</span>
+                    <button>В корзину</button>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="newsProduct">
+            <span id="newsHeader">
+                <span id="title">Новинки</span>
+                <span id="link">Весь каталог</span>
+                <span id="point">
+                    <img src="img/content/Фигура 60.png"/>
+                    <img src="img/content/Фигура 60.png"/>
+                </span>
+            </span>
+                <div class="newsItem">
+                    <div id="item1">
+                        <span id="bestsellerTitle">Акция</span>
+                        <span id="productName">Удилище<br> Adrenalin<br> 7300 BC</span>
+                        <span id="sale">30%</span>
+                        <span id="price">4800 р.</span>
+                    </div>
+                    <div id="item2">
+                        <span id="label">
+                        <span id="discount">Скидка</span>
+                        <span id="hits">Хит</span>
+                    </span>
+                         <span id="icons">
+                            <span id="stars">
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                            </span>
+                            <span id="heart">
+                                <img src="img/content/bestseller/1/valentines-heart.png"/>
+                            </span>
+                        </span>
+                        <span id="productName">
+                        Катушка<br>
+                        Matze Koch Rollen
+                    </span>
+                        <span id="price">13490 р.</span>
+                        <button>В корзину</button>
+                    </div>
+                    <div id="item3">
+                        <span id="label">
+                        <span id="discount">Скидка</span>
+                        <span id="hits">Хит</span>
+                    </span>
+                        <span id="icons">
+                            <span id="stars">
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                            </span>
+                            <span id="heart">
+                                <img src="img/content/bestseller/1/valentines-heart.png"/>
+                            </span>
+                        </span>
+                        <span id="productName">
+                        Подсачек<br>
+                        Matze Koch Rollen
+                    </span>
+                        <span id="price">3240 р.</span>
+                        <button>В корзину</button>
+                    </div>
+                    <div id="item4">
+                        <span id="label">
+                        <span id="discount">Скидка</span>
+                        <span id="hits">Хит</span>
+                    </span>
+                         <span id="icons">
+                            <span id="stars">
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                                <img src="img/content/bestseller/1/star.png"/>
+                            </span>
+                            <span id="heart">
+                                <img src="img/content/bestseller/1/valentines-heart.png"/>
+                            </span>
+                        </span>
+                        <span id="productName">
+                        Сумка Рыболовная<br>
+                        Matze Koch Rollen
+                    </span>
+                        <span id="price">5600 р.</span>
+                        <button>В корзину</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="latestNews">
+                <span id="latestNewsHeader">
+                    <span id="title"><nobr>Последние новости</nobr></span>
+                    <span id="link">Все новости</span>
+                    <span id="point">
+                        <img src="img/content/Фигура 60.png"/>
+                        <img src="img/content/Фигура 60.png"/>
+                    </span>
+                </span>
+                <div class="latestNewsItems">
+                    <div id="item1">
+                        <span id="label">13.02.2019</span>
+                        <span id="titleText"><nobr>Презентация нового продукта</nobr></span>
+                        <br>
+                        <span id="text">Равным образом консультация с широким активом позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+                            Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+                            Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        </span>
+                        <br>
+                        <span id="details">Подробнее</span>
+                    </div>
+                    <div id="item2">
+                        <span id="label">13.02.2019</span>
+                        <span id="titleText"><nobr>Презентация нового продукта</nobr></span>
+                        <br>
+                        <span id="text">Равным образом консультация с широким активом позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+                            Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+                            Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.
+                        </span>
+                        <br>
+                        <span id="details">Подробнее</span>
+                    </div>
+                    <div id="item3">
+                        <span id="label">13.02.2019</span>
+                        <span id="titleText"><nobr>Презентация нового продукта</nobr></span>
+                        <br>
+                        <span id="text">Равным образом консультация с широким активом позволяет выполнять важные задания по разработке направлений прогрессивного развития.
+                            Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+                        </span>
+                        <br>
+                        <span id="details">Подробнее</span>
+                    </div>
+                </div>
+                <div class="subscription">
+                    <span id="subscriptionText"><nobr>Подпишитесь на рассылку и будьте в курсе новостей,акций,новинок</nobr></span>
+                    <br>
+                    <span id="subscriptionEmail"><input id="email" type="text" placeholder="Ваш email"><button id="confirmEmail">Подписаться</button> </span>
+                </div>
+            </div>
+        <div class="discounts">
+            <div id="item1">
+                <span id="discountTitle">Скидка<br> на все лески</span>
+                <span id="image">
+                    <img src="img/content/Фигура 60.png">
+                </span>
+            </div>
+            <div id="item2">
+                <span id="discountTitle">Скидка<br> на катушки</span>
+                <span id="image">
+                    <img src="img/content/Фигура 60.png">
+                </span>
+            </div>
+        </div>
+        <div class="aboutCompany">
+            <span id="companyTitle">О компании</span>
+            <span id="text">
+                <span id="text1">
+                    Не следует, однако забывать, что реализация намеченных плановых заданий играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
+                </span>
+                <span id="text2">
+                    Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании новых предложений. Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массового участия. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Повседневная практика показывает, что начало повседневной работы по формированию позиции играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации систем массового участия.
+                </span>
+            </span>
+        </div>
+    </div>
+
+    </div>
+<div class="footer">
+    <span id="logo">
+        <img src="img/footer/footerLogo.png"/>
+        <br>
+        Официальный представитель<br>
+        в России
+        <span id="link">
+            Скачать каталог 2020<br>
+            Связаться с нами
+        </span>
+    </span>
+    <span id="company">
+        <span id="titleName">Компания</span>
+        <ul>
+            <li><nobr>О компании</nobr></li>
+            <li>Акции</li>
+            <li>Новости</li>
+            <li>Блог</li>
+            <li>Эксперты</li>
+            <li>Контакты</li>
+        </ul>
+    </span>
+    <span id="buyers">
+        <span id="titleName">Покупателям</span>
+        <ul>
+            <li>Каталог</li>
+            <li>Оплата</li>
+            <li>Доставка</li>
+            <li>Возврат</li>
+            <li>Помощь</li>
+        </ul>
+    </span>
+    <span id="wholesalers">
+        <span id="titleName">Оптовикам</span>
+        <ul>
+            <li>8(800)000-00-00</li>
+            <li>8(800)000-00-00</li>
+            <li>8(800)000-00-00</li>
+            <li><font color="#009add"><u>info@mail.ru</u></font></li>
+        </ul>
+    </span>
+    <span id="contacts">
+        <span id="titleName">Контакты</span>
+        <ul>
+            <li>г.Москва ул.Иванова</li>
+            <li>д.5,пом.8,офис 11</li>
+            <li>8(800)000-00-00</li>
+            <li>8(800)000-00-00</li>
+            <li><font color="#009add"><u>info@yandex.ru</u></font></li>
+        </ul>
+    </span>
+    <div class="line"></div>
+    <div class="info">
+        <span id="rights">2010-2019 Ltd.Все права защищены.</span>
+        <span id="socialNetworks">
+            <img src="img/footer/vk.png"/>
+            <img src="img/footer/facebook.png"/>
+            <img src="img/footer/instagram (1).png"/>
+        </span>
+    </div>
+</div>
+<script src="scipt.js"></script>
+</body>
+</html>

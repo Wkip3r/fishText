@@ -1,0 +1,1045 @@
+.mainContent{
+    grid-row:2/20;
+    grid-column: 1/11;
+    height: min-content;
+}
+/*Шапка контента*/
+.mainContent .sidebar{
+    grid-row: 7/8;
+    grid-column: 1/11;
+    height: min-content;
+    background-color:#efefef;
+    display: flex;
+}
+.sidebar #aboutCompany,.sidebar #stocks,.sidebar #news,.sidebar #blog,.sidebar #experts,.sidebar #contacts{
+    flex:1;
+    font-size: 1vw;
+    font-weight: 600;
+    padding:2em 1em;
+}
+.sidebar #aboutCompany:focus{
+    background: top/20% no-repeat url('img/139-1399417_white-upside-down-triangle-hd-png-download.png');
+}
+.sidebar #stocks:focus {
+    background: top/20% no-repeat url('img/139-1399417_white-upside-down-triangle-hd-png-download.png');
+}
+.sidebar #news:focus {
+    background: top/20% no-repeat url('img/139-1399417_white-upside-down-triangle-hd-png-download.png');
+}
+.sidebar #blog:focus{
+    background: top/20% no-repeat url('img/139-1399417_white-upside-down-triangle-hd-png-download.png');
+}
+.sidebar #experts:focus{
+    background: top/20% no-repeat url('img/139-1399417_white-upside-down-triangle-hd-png-download.png');
+}
+.sidebar #contacts:focus{
+    background: top/20% no-repeat url('img/139-1399417_white-upside-down-triangle-hd-png-download.png');
+}
+#catalogue{
+    flex:2;
+    padding:1em 1em;
+    background-color: #009ee2;
+    font-size: 1.5vw;
+    color:white;
+}
+#catalogue #menu{
+    margin-right:1em;
+    height:1vw;
+}
+#catalogue #arrow{
+    margin-left:1em;
+    height:0.8vw;
+}
+/*Конец шапки контента*/
+/*Баннеры*/
+/*Главный*/
+.bannersContent{
+    margin-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 0.5em;
+}
+.mainBanner{
+    grid-column: 2/5;
+    grid-row: 1/3;
+    border-radius: 5px;
+    display: flex;
+    height: min-content;
+    background:center / 100% no-repeat url('img/content/Слой 34.png'),
+                100%  no-repeat url('img/content/banners/mainBanner/Фигура 41.png');
+    background-size: 100% 100%;
+    box-shadow: 1px 8px 4px -4px rgba(92, 18, 128, 0.34);
+
+}
+.mainBanner #text,#image{
+    flex:1;
+}
+.mainBanner #text{
+    margin-left:1em;
+    display: flex;
+    flex-direction: column;
+}
+.mainBanner #bannerTitle{
+    flex:3;
+    font-size: 2vw;
+    color:white;
+}
+.mainBanner #productName{
+    flex:1;
+    font-size: 1vw;
+    font-weight: 200;
+    color:aqua;
+}
+.mainBanner #buyButton{
+    flex:0.5;
+    font-size: 1vw;
+    width:50%;
+    margin-top: 0.5em;
+    background: black;
+    color:white;
+    border-radius: 2px;
+    border: none;
+}
+.mainBanner #text #price{
+    flex:1.5;
+    font-size: 1.5vw;
+    color:white;
+}
+.mainBanner #text img{
+    flex:0.2;
+    width: 0.2em;
+    height: 0.2em;
+}
+.mainBanner #image{
+    flex:1;
+    margin: 0 auto;
+    text-align: center;
+}
+.mainBanner #image img{
+    margin: 0 auto;
+    height:100%;
+    width:50%;
+}
+/*Первый баннер*/
+.firstBanner{
+    grid-column: 2/3;
+    grid-row: 3/3;
+    display: flex;
+    height: min-content;
+    border-radius: 4px;
+    background:center / 100% no-repeat url('img/content/Слой 34.png'),
+    100%  no-repeat url('img/content/banners/mainBanner/Фигура 41.png');
+    background-size: 100% 100%;
+    box-shadow: 1px 8px 4px -4px rgba(92, 18, 128, 0.34);
+}
+.firstBanner #text,#image{
+    flex:1;
+}
+.firstBanner #text{
+    margin:1em 0.5em;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.firstBanner #bannerTitle{
+    flex:1;
+    color: white;
+}
+.firstBanner #productName{
+    flex:1;
+    color: aqua;
+}
+.firstBanner #image img{
+    flex:1;
+    height:8vw;
+}
+.firstBanner #text img{
+    height:1vw;
+    width: 1vw;
+}
+/*Второй баннер*/
+.secondBanner{
+    grid-column: 3/4;
+    grid-row: 3/3;
+    display: flex;
+    height: min-content;
+    border-radius: 4px;
+    background:center / 100% no-repeat url('img/content/Слой 34.png'),
+    100%  no-repeat url('img/content/banners/mainBanner/Фигура 41.png');
+    background-size: 100% 100%;
+    box-shadow: 1px 8px 4px -4px rgba(92, 18, 128, 0.34);
+}
+.secondBannerBanner #text,#image{
+    flex:1;
+}
+.secondBanner #text{
+    margin:1em 0.5em;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.secondBanner #bannerTitle{
+    flex:1;
+    color: white;
+}
+.secondBanner #productName{
+    flex:1;
+    color: aqua;
+}
+.secondBanner #image img{
+    flex:1;
+    height:8vw;
+}
+.secondBanner #text img{
+    height:1vw;
+    width: 1vw;
+}
+/*Третий баннер*/
+.thirdBanner{
+    grid-column: 4/5;
+    grid-row: 3/3;
+    display: flex;
+    height: min-content;
+    border-radius: 4px;
+    background:center / 100% no-repeat url('img/content/Слой 34.png'),
+    100%  no-repeat url('img/content/banners/mainBanner/Фигура 41.png');
+    background-size: 100% 100%;
+    box-shadow: 1px 8px 4px -4px rgba(92, 18, 128, 0.34);
+}
+.thirdBanner #text{
+    flex:2;
+}
+.thirdBanner #image{
+    flex:1;
+}
+.thirdBanner #text{
+    margin:1em 0.5em;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.thirdBanner #bannerTitle{
+    flex:1;
+    color: white;
+}
+.thirdBanner #productName{
+    flex:1;
+    font-size: 0.9vw;
+    color: aqua;
+}
+.thirdBanner #image img{
+    margin-left: 1vw;
+    height:8vw;
+}
+.thirdBanner #text img{
+    height:1vw;
+    width: 1vw;
+}
+/*Выпадающий список*/
+.dropList{
+    text-align: left;
+    grid-row:1/4;
+    grid-column: 1/1;
+}
+.dropList ul{
+    margin:0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    list-style: none;
+    box-shadow: 1px 8px 8px -2px rgba(92, 18, 128, 0.34);
+}
+.dropList ul li{
+    width:100%;
+    font-size: 1.5vw;
+    background-color:#efefef;
+    flex:1;
+    border: 1px solid #efefef;
+    margin-top: 0.1em;
+}
+.dropList ul li img{
+    height: 1vw;
+    margin:0 1vw;
+}
+/*Хиты продаж*/
+.bestsellers{
+}
+.bestsellerItems{
+    margin-top: 2vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4,1fr);
+    height: 90%;
+}
+.bestsellerItems #item1,.bestsellerItems #item2,.bestsellerItems #item3,.bestsellerItems #item4{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+}
+#bestsellerHeader{
+    display: flex;
+}
+#bestsellerHeader #title{
+    flex:1;
+    font-size: 2vw;
+    font-weight: 600;
+}
+#bestsellerHeader #link{
+    flex:1;
+    font-size: 1vw;
+    color:#009ee2;
+    text-decoration: underline;
+}
+#bestsellerHeader #point {
+    text-align: right;
+    flex:1;
+}
+#bestsellerHeader #point img{
+    height:1vw;
+    text-align: right;
+    flex:2;
+}
+/*Первый item*/
+.bestsellerItems #item1{
+    height:100%;
+    text-align: center;
+    background: center / 100% no-repeat url('img/content/bestseller/1/productImage.png'),
+    center/ 100% no-repeat url('img/content/Слой 34.png'),
+    no-repeat url('img/content/banners/mainBanner/Фигура 41.png');
+}
+.bestsellerItems #item1 #bestsellerTitle{
+    font-size: 1.5vw;
+    color:white;
+}
+.bestsellerItems #item1 #text{
+    text-align: left;
+    margin-left: 1vw;
+    flex:3;
+    font-size: 1.5vw;
+    color: #24cfe2;
+}
+.bestsellerItems #item1 #price{
+    flex:0.5;
+    text-align: left;
+    margin-left: 1vw;
+    font-size: 2vw;
+    font-weight: 800;
+    color:white;
+}
+/*Второй item*/
+.bestsellerItems #item2{
+    text-align: center;
+    background: url('img/content/bestseller/2/mk_detail_rollenhalter.png') no-repeat;
+    background-size: 70%;
+}
+.bestsellerItems #item2 #label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: min-content;
+    font-weight: 800;
+}
+.bestsellerItems #item2 #label #discount{
+    background-color: green;
+    font-size: 1vw;
+    color:white;
+    width:5vw;
+    border-radius: 2px;
+    text-align: center;
+    visibility: hidden;
+}
+.bestsellerItems #item2 #label #hits{
+    background-color: #009ee2;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color:white;
+    width: 4vw;
+    text-align:center;
+    border-radius: 2px;
+}
+.bestsellerItems #item2 #icons{
+    margin-top: 11vw;
+}
+.bestsellerItems #item2 #icons{
+    display:flex;
+}
+.bestsellerItems #item2 #icons #stars{
+    flex:1;
+}
+.bestsellerItems #item2 #icons #stars img{
+    height:1vw;
+    width:1vw;
+}
+.bestsellerItems #item2 #icons #heart{
+    text-align: center;
+    flex:1;
+}
+.bestsellerItems #item2 #icons #heart img{
+    height:1vw;
+    width:1vw;
+}
+.bestsellerItems #item2 #productName{
+    text-align: left;
+    font-size: 1vw;
+}
+.bestsellerItems #item2 #price{
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.bestsellerItems #item2 button{
+    background-color: #009ee2;
+    border: none;
+    border-radius: 2px;
+    font-size: 2vw;
+    margin: 1em auto;
+    color: white;
+    width: 70%;
+}
+/*Третий item*/
+.bestsellerItems #item3{
+    background: url("img/content/bestseller/3/shad_jigging.png") no-repeat;
+    background-size: 60%;
+    text-align: center;
+}.bestsellerItems #item3 #label{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     width: min-content;
+     font-weight: 800;
+ }
+.bestsellerItems #item3 #label #discount{
+    background-color: green;
+    font-size: 1vw;
+    color:white;
+    width:5vw;
+    border-radius: 2px;
+    text-align: center;
+}
+.bestsellerItems #item3 #label #hits{
+    background-color: #009ee2;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color:white;
+    width: 4vw;
+    text-align:center;
+    border-radius: 2px;
+}
+.bestsellerItems #item3 #icons{
+    margin-top: 11vw;
+}
+.bestsellerItems #item3 #icons{
+    display:flex;
+}
+.bestsellerItems #item3 #icons #stars{
+    flex:1;
+}
+.bestsellerItems #item3 #icons #stars img{
+    height:1vw;
+    width:1vw;
+}
+.bestsellerItems #item3 #icons #heart{
+    text-align: center;
+    flex:1;
+}
+.bestsellerItems #item3 #icons #heart img{
+    height:1vw;
+    width:1vw;
+}
+.bestsellerItems #item3 #productName{
+    text-align: left;
+    font-size: 1vw;
+}
+.bestsellerItems #item3 #price{
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.bestsellerItems #item3 button{
+    background-color: #009ee2;
+    border: none;
+    border-radius: 2px;
+    font-size: 2vw;
+    margin: 1em auto;
+    color: white;
+    width: 70%;
+}
+/*Четвертый item*/
+.bestsellerItems #item4{
+    background: url("img/content/bestseller/4/item4Background.png") no-repeat;
+    background-size: 80%;
+    text-align: center;
+}
+.bestsellerItems #item4 #label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: min-content;
+    font-weight: 800;
+}
+.bestsellerItems #item4 #label #discount{
+    background-color: green;
+    font-size: 1vw;
+    color:white;
+    width:5vw;
+    border-radius: 2px;
+    text-align: center;
+    visibility: hidden;
+}
+.bestsellerItems #item4 #label #hits{
+    background-color: #009ee2;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color:white;
+    width: 4vw;
+    text-align:center;
+    border-radius: 2px;
+}
+.bestsellerItems #item4 #icons{
+    margin-top: 11vw;
+}
+.bestsellerItems #item4 #icons{
+    display:flex;
+}
+.bestsellerItems #item4 #icons #stars{
+    flex:1;
+}
+.bestsellerItems #item4 #icons #stars img{
+    height:1vw;
+    width:1vw;
+}
+.bestsellerItems #item4 #icons #heart{
+    text-align: center;
+    flex:1;
+}
+.bestsellerItems #item4 #icons #heart img{
+    height:1vw;
+    width:1vw;
+}
+.bestsellerItems #item4 #productName{
+    text-align: left;
+    font-size: 1vw;
+}
+.bestsellerItems #item4 #price{
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.bestsellerItems #item4 button{
+    background-color: #009ee2;
+    border: none;
+    border-radius: 2px;
+    font-size: 2vw;
+    margin: 1em auto;
+    color: white;
+    width: 70%;
+}
+
+/*Новинки*/
+.newsProduct{
+height: 100%;
+}
+.newsItem{
+    display: flex;
+}
+.newsItem #item1,.newsItem #item2,.newsItem #item3,.newsItem #item4{
+    flex:1;
+}
+#newsHeader{
+    display: flex;
+}
+#newsHeader #title{
+    flex:1;
+    font-size: 2vw;
+    font-weight: 600;
+    height: min-content;
+}
+#newsHeader #link{
+    flex:1;
+    font-size: 1vw;
+    color:#009ee2;
+    text-decoration: underline;
+}
+#newsHeader #point {
+    text-align: right;
+    flex:1;
+}
+#newsHeader #point img{
+    height:1vw;
+    text-align: right;
+    flex:2;
+}
+/*Первый item*/
+.newsItem #item1 {
+    background:right/60%  no-repeat url('img/content/newItems/1/purepng.png'),
+    left/30% no-repeat url('img/content/discount/1/discount30.png'),
+    center/ 100% no-repeat url('img/content/Слой 34.png'),
+    100% no-repeat url('img/content/banners/mainBanner/Фигура 41.png');
+    display: flex;
+    flex-direction: column;
+}
+.newsItem #item1 #bestsellerTitle{
+    margin-left: 1vw;
+    flex:1.5;
+    color:white;
+    font-size: 4vw;
+}
+.newsItem #item1 #productName{
+    flex:1;
+    margin-left: 1vw;
+    color:#24cfe2;
+    font-size: 1vw;
+}
+.newsItem #item1 #sale{
+    flex:3;
+    margin-top: 2vw;
+    text-align: left;
+    margin-left: 1vw;
+    align-items: flex-end;
+    font-size: 4vw;
+    color:#24cfe2;
+    visibility:hidden;
+}
+.newsItem #item1 #price{
+    font-size: 2vw;
+    color:white;
+    font-weight: 800;
+    flex:1;
+    margin-left: 1vw;
+}
+/*Второй item*/
+.newsItem #item2{
+    background: url("img/content/newItems/2/productImage.png") no-repeat;
+    background-size: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.newsItem #item2 #label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: min-content;
+    font-weight: 800;
+}
+.newsItem #item2 #label #discount{
+    background-color: green;
+    font-size: 1vw;
+    color:white;
+    width:5vw;
+    border-radius: 2px;
+    text-align: center;
+    visibility: hidden;
+}
+.newsItem #item2 #label #hits{
+    background-color: #009ee2;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color:white;
+    width: 4vw;
+    text-align:center;
+    border-radius: 2px;
+    visibility: hidden;
+}
+.newsItem #item2 #icons{
+    margin-top: 11vw;
+}
+.newsItem #item2 #icons{
+    display:flex;
+}
+.newsItem #item2 #icons #stars{
+    flex:1;
+}
+.newsItem #item2 #icons #stars img{
+    height:1vw;
+    width:1vw;
+}
+.newsItem #item2 #icons #heart{
+    text-align: center;
+    flex:1;
+}
+.newsItem #item2 #icons #heart img{
+    height:1vw;
+    width:1vw;
+}
+.newsItem #item2 #productName{
+    text-align: left;
+    font-size: 1vw;
+    flex:1;
+}
+.newsItem #item2 #price{
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: 800;
+    flex:1;
+}
+.newsItem #item2 button{
+    background-color: #009ee2;
+    border: none;
+    border-radius: 2px;
+    font-size: 2vw;
+    margin: 1em auto;
+    color: white;
+    width: 70%;
+}
+
+/*Третий item*/
+.newsItem #item3{
+    background: url("img/content/newItems/3/Слой 26.png") no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.newsItem #item3 #label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: min-content;
+    font-weight: 800;
+}
+.newsItem #item3 #label #discount{
+    background-color: green;
+    font-size: 1vw;
+    color:white;
+    width:5vw;
+    border-radius: 2px;
+    text-align: center;
+    visibility: visible;
+}
+.newsItem #item3 #label #hits{
+    background-color: #009ee2;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color:white;
+    width: 4vw;
+    text-align:center;
+    border-radius: 2px;
+    visibility: hidden;
+}
+.newsItem #item3 #icons{
+    margin-top: 11vw;
+}
+.newsItem #item3 #icons{
+    display:flex;
+}
+.newsItem #item3 #icons #stars{
+    flex:1;
+}
+.newsItem #item3 #icons #stars img{
+    height:1vw;
+    width:1vw;
+}
+.newsItem #item3 #icons #heart{
+    text-align: center;
+    flex:1;
+}
+.newsItem #item3 #icons #heart img{
+    height:1vw;
+    width:1vw;
+}
+.newsItem #item3 #productName{
+    text-align: left;
+    font-size: 1vw;
+}
+.newsItem #item3 #price{
+    flex:1;
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.newsItem #item3 button{
+    flex:1;
+    background-color: #009ee2;
+    border: none;
+    border-radius: 2px;
+    font-size: 2vw;
+    margin: 1em auto;
+    color: white;
+    width: 70%;
+}
+/*Четвертый item*/
+.newsItem #item4{
+    background: url("img/content/newItems/4/Слой 27.png") no-repeat;
+    background-size: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.newsItem #item4 #label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: min-content;
+    font-weight: 800;
+}
+.newsItem #item4 #label #discount{
+    background-color: green;
+    font-size: 1vw;
+    color:white;
+    width:5vw;
+    border-radius: 2px;
+    text-align: center;
+    visibility: hidden;
+}
+.newsItem #item4 #label #hits{
+    background-color: #009ee2;
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    color:white;
+    width: 4vw;
+    text-align:center;
+    border-radius: 2px;
+    visibility: hidden;
+}
+.newsItem #item4 #icons{
+    margin-top: 11vw;
+}
+.newsItem #item4 #icons{
+    display:flex;
+}
+.newsItem #item4 #icons #stars{
+    flex:1;
+}
+.newsItem #item4 #icons #stars img{
+    height:1vw;
+    width:1vw;
+}
+.newsItem #item4 #icons #heart{
+    text-align: center;
+    flex:1;
+}
+.newsItem #item4 #icons #heart img{
+    height:1vw;
+    width:1vw;
+}
+.newsItem #item4 #productName{
+    text-align: left;
+    font-size: 1vw;
+}
+.newsItem #item4 #price{
+    flex:1;
+    text-align: left;
+    font-size: 1.5vw;
+    font-weight: 800;
+}
+.newsItem #item4 button{
+    flex:1;
+    background-color: #009ee2;
+    border: none;
+    border-radius: 2px;
+    font-size: 2vw;
+    margin: 1em auto;
+    color: white;
+    width: 70%;
+}
+/*Серый фон*/
+.middle{
+    grid-row: 6/8;
+    grid-column: 1/11;
+    background-color: #efefef;
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+}
+/*Последние новости*/
+.latestNewsItems{
+    display: flex;
+    height:min-content;
+}
+#latestNewsHeader{
+    margin-top: 3vw;
+    display: flex;
+}
+#latestNewsHeader #title{
+    flex:1;
+    font-weight: 600;
+}
+#latestNewsHeader #link{
+    flex:1;
+    font-size: 1vw;
+    margin:1vw 0;
+    text-align: center;
+    color:#009ee2;
+    text-decoration: underline;
+}
+#latestNewsHeader #point {
+    text-align: right;
+    flex:1;
+}
+#latestNewsHeader #point img{
+    height:1vw;
+    text-align: right;
+    flex:2;
+}
+.latestNewsItems #item1,.latestNewsItems #item2,.latestNewsItems #item3{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    height:min-content;
+}
+/*Первый item*/
+.latestNewsItems #item1{
+    background: url("img/content/news/1/Слой 25.png") no-repeat,
+                white;
+    background-size: 100%;
+    margin:0 0.5vw;
+}
+.latestNewsItems #item1 #label{
+    background-color: black;
+    color:white;
+    width: 20%;
+    font-size: 1vw;
+    margin: 1vw 1vw;
+}
+/*Второй item*/
+.latestNewsItems #item2{
+    background: url("img/content/news/2/fd7b2565d75b06c73d-73087911 (1).png") no-repeat,
+                white;
+    background-size: 120%;
+    background-position-x: -5vw;
+    background-position-y: 1vw;
+    margin:0 0.5vw;
+}
+.latestNewsItems #item2 #label{
+    background-color: black;
+    color:white;
+    width: 20%;
+    font-size: 1vw;
+    margin: 1vw 1vw;
+}
+/*Третий item*/
+.latestNewsItems #item3{
+    background: url("img/content/news/3/shutterstock_1424418452.png") no-repeat,
+                white;
+    background-size: 120%;
+    margin:0 0.5vw;
+    height: 100%;
+    background-position-x: -8vw;
+}
+.latestNewsItems #item3 #label{
+    background-color: black;
+    color:white;
+    width: 20%;
+    font-size: 1vw;
+    margin: 1vw 2vw;
+}
+.latestNewsItems #item1 #text,.latestNewsItems #item2 #text,.latestNewsItems #item3 #text{
+    line-height: 1vw;
+    font-size: 0.9vw;
+}
+.latestNewsItems #item1 #titleText,#item2 #titleText,#item3 #titleText{
+    margin-top:70%;
+    font-weight: 800;
+    font-size: 1vw;
+}
+.latestNewsItems #item1 #details,.latestNewsItems #item2 #details,.latestNewsItems #item3 #details{
+    color:#009ee2;
+    text-decoration: underline;
+    font-size: 1vw;
+}
+/*Рассылка*/
+.subscription{
+    text-align: center;
+}
+.subscription #subscriptionText{
+    font-size: 2vw;
+    font-weight: 800;
+}
+.subscription #subscriptionEmail{
+    display: flex;
+    font-size: 1vw;
+    margin: 2vw auto;
+    width:90%;
+}
+.subscription #subscriptionEmail input {
+    flex:5;
+    font-size: 2vw;
+}
+.subscription #subscriptionEmail button{
+    flex:1;
+    background-color: #6f6f6f;
+    border: none;
+    color: white;
+    font-size: 1vw;
+}
+/*Скидки*/
+.discounts{
+    margin-top: 4vw;
+    display: flex;
+}
+.discounts #item1{
+    border-radius:5px;
+    flex:1;
+    height:min-content;
+    background:right/ 20% no-repeat url('img/content/discount/1/Слой 28.png'),
+    bottom/40% no-repeat url('img/content/discount/1/discount30.png'),
+    top/40% no-repeat url('img/content/discount/1/decembre15.png'),
+    right/ 100% no-repeat url('img/content/Слой 34.png'),
+    no-repeat url('img/content/discountBackground.png');
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 8px 4px -4px rgba(92, 18, 128, 0.34);
+}
+.discounts #item2{
+    border-radius:5px;
+    flex:1;
+    height:min-content;
+    background:right/ 20% no-repeat url('img/content/discount/2/b631e84774d3911caa405aa6edee2798.png'),
+    bottom/40% no-repeat url('img/content/discount/2/discount10.png'),
+    top/40% no-repeat url('img/content/discount/2/january31.png'),
+    center/ 100% no-repeat url('img/content/Слой 34.png'),
+    no-repeat url('img/content/discountBackground.png');
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 8px 4px -4px rgba(92, 18, 128, 0.34);
+}
+.discounts #item2 #label{
+    background-color: black;
+    color:white;
+    font-size: 1vw;
+}
+.discounts #discountTitle{
+    margin: 0 1em;
+    flex: 3;
+    font-size: 2vw;
+    color: white;
+    font-weight: 800;
+}
+.discounts #item1 #image,.discounts #item2 #image{
+    margin-top: 5vw;
+    flex:2;
+}
+.discounts #item1 img,.discounts #item2 img{
+    margin-left: 1vw;
+    flex:1;
+    width: 1vw;
+    height: 1vw;
+}
+/*О компании*/
+.aboutCompany{
+    height: min-content;
+}
+.aboutCompany #text{
+    display: flex;
+    height: min-content;
+}
+.aboutCompany #companyTitle{
+    margin-left: 1vw;
+    font-size:2vw;
+}
+.aboutCompany #text1{
+    flex:1;
+    height: min-content;
+    font-size: 0.8vw;
+    line-height: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.aboutCompany #text2{
+    flex:1;
+    height: min-content;
+    font-size: 0.8vw;
+    line-height: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
